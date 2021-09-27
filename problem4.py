@@ -33,3 +33,22 @@ that is an obtuse triangle
 
 
 """
+num1 = float(input("enter first side: "))
+num2 = float(input("enter second side: "))
+num3 = float(input("enter third side: "))
+num1 = round(num1)
+num2 = round(num2)
+num3 = round(num3)
+
+list1 = [num1, num2, num3]
+list1.sort()
+hypotenuse = list1[-1]
+side1 = list1[-2]
+side2 = list1[-3]
+print(side1**2,side2**2,hypotenuse**2)
+if (side1**2)+(side2**2) == (hypotenuse**2):
+    print("that is a right triangle")
+elif (side1**2)+(side2**2) < (hypotenuse**2):
+    print("that is an obtuse triangle")
+elif (side1**2)+(side2**2) > (hypotenuse**2):
+    print("that is an acute triangle")

@@ -29,3 +29,12 @@ Enter c: 8
 the equation can not be factored
 
 """
+a = float(input("enter the first number: "))
+b = float(input("enter the second number: "))
+c = float(input("enter the third number: "))
+
+disc = (b**2)-4*a*c 
+if disc != 0: 
+    print("the equation can not be factored")
+else:
+    print("the equation can be factored")
